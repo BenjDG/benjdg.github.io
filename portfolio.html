@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About Me</title>
-
-		<link rel="stylesheet" href="./Assets/css/reset.css" />
+		<title>Portfolio</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,7 +20,7 @@
 					<nav
 						class="col navbar navbar-expand-lg navbar-light bg-white sticky-top"
 					>
-						<h2 class="text-white bg-info m-2">
+						<h2 class="text-white bg-info m-2" href="#">
 							Ben Galloway
 						</h2>
 						<button
@@ -42,17 +40,17 @@
 						>
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a
-										class="nav-link active"
-										href="./index.html"
-										>About Me<span class="sr-only"
-											>(current)</span
-										></a
+									<a class="nav-link" href="./index.html"
+										>About Me</a
 									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="./portfolio.html"
-										>Portfolio</a
+									<a
+										class="nav-link active"
+										href="./portfolio.html"
+										>Portfolio<span class="sr-only"
+											>(current)</span
+										></a
 									>
 								</li>
 								<li class="nav-item">
@@ -64,48 +62,56 @@
 						</div>
 					</nav>
 				</div>
-				<div class="row m-4"></div>
-
-				<!-- about me section -->
-
-				<div class="row">
-					<div class="col col-md-8">
-						<main class="jumbotron m-4 mt-5 p-5 bg-white">
-							<div class="row">
-								<div class="col">
-									<h2 class="text-info">About Me</h2>
-									<hr />
-									<img
-										src="./Assets/Images/reducedSelf.png"
-										class="img-fluid float-left p-4"
-										alt="Responsive image"
-									/>
-									<p class="lead">
-										I am an ambitious web developer
-										currently working with Node.js Express,
-										MongoDB and javascript. I have been in
-										Systems Engineer and Technical Support
-										roles for the last 5+ years. I have
-										professional experience in Active
-										Directory, IT Security best practices,
-										software installation, Windows Server,
-										Powershell and Office 365. I have a
-										history of being a valuable employee and
-										have helped modernize every company I
-										have worked for.
-									</p>
+				<!-- main section -->
+				<main class="row pt-4">
+					<div class="row m-4"></div>
+					<div class="row m-2">
+						<div class="col col-md-9">
+							<div class="bg-white">
+								<h2 class="pt-4 px-2 text-info">Portfolio</h2>
+								<hr />
+								<div class="row m-2">
+									<div class="col col-md-9">
+										<a
+											href="https://benjdg.github.io/Travel_App/"
+										>
+											<img
+												src="./Assets/Images/travel-planner.png"
+												alt="picture of website"
+												class="img-thumbnail border-0"
+										/></a>
+										<img
+											src="https://via.placeholder.com/300"
+											alt="picture of website"
+											class="img-thumbnail border-0"
+										/>
+										<img
+											src="https://via.placeholder.com/300"
+											alt="picture of website"
+											class="img-thumbnail border-0"
+										/>
+										<img
+											src="https://via.placeholder.com/300"
+											alt="picture of website"
+											class="img-thumbnail border-0"
+										/>
+										<img
+											src="https://via.placeholder.com/300"
+											alt="picture of website"
+											class="img-thumbnail border-0"
+										/>
+									</div>
 								</div>
 							</div>
-						</main>
-						<div class="col col-md-4"></div>
+						</div>
+						<div class="col-0 col-md-3"></div>
 					</div>
-				</div>
+				</main>
 			</div>
 		</div>
 
 		<!-- footer -->
-
-		<footer class="row p-0 pt-2 bg-info footer">
+		<footer class="row pt-2 bg-info footer">
 			<p class="col-12 text-center p-4 m-0 bg-secondary">©Copywrite</p>
 		</footer>
 
