@@ -41,16 +41,15 @@ h2 {
 	.about-section {
 		padding: 2rem;
 		margin-bottom: 1rem;
-    }
-    .portfolio-color {
-        padding: 1rem 0 4rem;
-    }
-    .portfolio-section,
-.contact-section {
-	padding: 1rem;
-}
-.contact-icons {
-	padding: 1rem 0 5rem;
-}
-
+	}
+	.portfolio-color {
+		padding: 1rem 0 4rem;
+	}
+	.portfolio-section,
+	.contact-section {
+		padding: 1rem;
+	}
+	.contact-icons {
+		padding: 1rem 0 5rem;
+	}
 }
