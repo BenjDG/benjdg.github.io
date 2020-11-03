@@ -12,6 +12,10 @@ h2 {
 	font-family: "Cardo", serif;
 }
 
+.card:hover {
+box-shadow: 10px 10px 5px;
+}
+
 .about-color {
 	padding: 8rem 0 10rem;
 }
