@@ -24,7 +24,7 @@ padding: 8rem 0 10rem;
 }
 
 .contact-color {
-    padding: 8rem 0 50rem;
+    /* padding: 8rem 0 50rem; */
 }
 
 .about-section {
@@ -38,5 +38,9 @@ padding: 8rem 0 10rem;
 
 .contact-section {
     padding: 5rem;
+}
+
+.contact-icons {
+    padding: 8rem 0 20rem;
 }
 
