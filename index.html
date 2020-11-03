@@ -12,11 +12,9 @@
 				dataLayer.push(arguments);
 			}
 			gtag("js", new Date());
-
 			gtag("config", "G-HY0SL7THT3");
 		</script>
 
-		
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About Me</title>
@@ -28,178 +26,210 @@
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 			crossorigin="anonymous"
 		/>
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./Assets/css/styles.css" />
+		
 	</head>
-	<body class="container">
-		<div class="">
-			<!-- navagation bar -->
-			<nav
-				class="col navbar navbar-expand-lg navbar-light bg-white sticky-top"
+	<body>
+		
+		<!-- navagation bar -->
+
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<h2 class="m-2">Ben Galloway</h2>
+			<button
+				class="navbar-toggler"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-				<h2 class="m-2">Ben Galloway</h2>
-				<button
-					class="navbar-toggler"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">About Me</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- about me section -->
-		<section class="jumbotron m-4 mt-5 p-5 bg-white">
-			<h2>About Me</h2>
-			<hr />
-			<img
-				src="./Assets/Images/reducedSelf.png"
-				class="img-fluid float-left p-4"
-				alt="Responsive image"
-			/>
-			<p>
-				My name is Ben. As a recent graduate of the University of Kansas
-				Full-Stack coding bootcamp, I have new skills in JavaScript,
-				React,js, Node.js and responsive web design. Being a
-				self-starter and intellectual, I also enjoy learning new skills
-				and collaborating in teams to maintain and create web
-				applications. A bachelor’s degree in education and 5 years as a
-				Systems Engineer give me a great foundation to build my skills
-				upon. Working in education, healthcare and government give me
-				inside background knowledge to create effective and user-first
-				web applications. I enjoy writing code and employing new
-				technologies to improve the efficiency, effectiveness and
-				quality of the product and business.
-			</p>
-		</section>
-
-		<!-- portfolio section -->
-
-		<section class="jumbotron m-4 mt-5 p-5 bg-white">
-			<h2 class="pt-4 px-2">Portfolio</h2>
-			<hr />
-			<div class="container">
-				<div class="row row-cols-1 row-cols-md-2">
-					<div class="col mb-4">
-						<div class="card">
-							<img
-								src="./Assets/Images/travel-planner.png"
-								alt="picture of website"
-								class="card-img-top border-0"
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Travel Planner</h5>
-								<p class="card-text">
-									This web application retrieves different
-									information about a location. It includes
-									information about the weather forecast,
-									upcoming events, and a map of the location.
-								</p>
-								<div class="card-footer border-0">
-									<h6 class="card-title">Technologies</h6>
-									<ul>
-										<li>Day.js</li>
-										<li>Bulma</li>
-										<li>jQuery</li>
-										<li>Font Awesome</li>
-										<li>Google Fonts</li>
-										<li>Google Maps API</li>
-										<li>Ticketmaster API</li>
-										<li>OpenWeather API</li>
-									</ul>
-									<a
-										class="btn btn-primary"
-										href="https://benjdg.github.io/Travel_App/"
-										>link
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-4">
-						<div class="card">
-							<img
-								src="./Assets/Images/work-day.PNG"
-								alt="picture of website"
-								class="card-img-top border-0"
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Work Day Scheduler</h5>
-								<p class="card-text">
-									This is a web application that locally
-									persists events into a work day scheduler.
-								</p>
-								<div class="card-footer border-0">
-									<h6 class="card-title">Technologies</h6>
-									<ul>
-										<li>Luxon.js</li>
-										<li>Bootstrap</li>
-										<li>Font Awesome</li>
-										<li>jQuery</li>
-										<li>Local Storage</li>
-									</ul>
-									<a
-										class="btn btn-primary"
-										href="https://benjdg.github.io/05_Work_Day_Scheduler/"
-										>link
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-4">
-						<div class="card">
-							<img
-								src="./Assets/Images/weather-dashboard.PNG"
-								alt="picture of website"
-								class="card-img-top border-0"
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Weather Dashboard</h5>
-								<p class="card-text">
-									This weather dashboard gives you the current
-									and 5-day forecast for a city. It also saves
-									your recent weather searches.
-								</p>
-								<div class="card-footer border-0">
-									<h6 class="card-title">Technologies</h6>
-									<ul>
-										<li>Day.js</li>
-										<li>Bulma</li>
-										<li>jQuery</li>
-										<li>Font Awesome</li>
-										<li>Open Weather API</li>
-									</ul>
-									<a
-										class="btn btn-primary"
-										href="https://benjdg.github.io/06_Weather_Dashboard/"
-										>link
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#about-me">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
 			</div>
-		</section>
+		</nav>
+
+		<!-- about me section -->
+		<div id="about-me" class="about-color">
+			<div class="container">
+				<section class="mt-5 mb-0 about-section clearfix">
+					<h2>About Me</h2>
+					<hr />
+					<img
+						src="./Assets/Images/reducedSelf.png"
+						class="img-fluid float-left p-4"
+						alt="Responsive image"
+					/>
+					<p>
+						My name is Ben. As a recent graduate of the University
+						of Kansas Full-Stack coding bootcamp, I have new skills
+						in JavaScript, React.js, Node.js and responsive web
+						design. Being a self-starter and intellectual, I also
+						enjoy learning new skills and collaborating in teams to
+						maintain and create web applications. A bachelor’s
+						degree in education and 5 years as a Systems Engineer
+						give me a great foundation to build my skills upon.
+						Working in education, healthcare and government give me
+						inside background knowledge to create effective and
+						user-first web applications. I enjoy writing code and
+						employing new technologies to improve the efficiency,
+						effectiveness and quality of the product and business.
+					</p>
+				</section>
+			</div>
+		</div>
+		<!-- portfolio section -->
+		<div class="portfolio-color">
+			<div class="container">
+				<section id="portfolio" class="portfolio-section">
+					<h2 class="pt-4 px-2">Portfolio</h2>
+					<hr />
+					<div class="container">
+						<div class="row row-cols-1 row-cols-md-2">
+							<div class="col mb-4">
+								<div class="card">
+									<img
+										src="./Assets/Images/travel-planner.png"
+										alt="picture of website"
+										class="card-img-top border-0"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">
+											Travel Planner
+										</h5>
+										<p class="card-text">
+											This web application retrieves
+											different information about a
+											location. It includes information
+											about the weather forecast, upcoming
+											events, and a map of the location.
+										</p>
+										<div class="card-footer border-0">
+											<h6 class="card-title">
+												Technologies
+											</h6>
+											<ul>
+												<li>Day.js</li>
+												<li>Bulma</li>
+												<li>jQuery</li>
+												<li>Font Awesome</li>
+												<li>Google Fonts</li>
+												<li>Google Maps API</li>
+												<li>Ticketmaster API</li>
+												<li>OpenWeather API</li>
+											</ul>
+											<a
+												class="btn btn-primary"
+												href="https://benjdg.github.io/Travel_App/"
+												>link
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card">
+									<img
+										src="./Assets/Images/work-day.PNG"
+										alt="picture of website"
+										class="card-img-top border-0"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">
+											Work Day Scheduler
+										</h5>
+										<p class="card-text">
+											This is a web application that
+											locally persists events into a work
+											day scheduler.
+										</p>
+										<div class="card-footer border-0">
+											<h6 class="card-title">
+												Technologies
+											</h6>
+											<ul>
+												<li>Luxon.js</li>
+												<li>Bootstrap</li>
+												<li>Font Awesome</li>
+												<li>jQuery</li>
+												<li>Local Storage</li>
+											</ul>
+											<a
+												class="btn btn-primary"
+												href="https://benjdg.github.io/05_Work_Day_Scheduler/"
+												>link
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card">
+									<img
+										src="./Assets/Images/weather-dashboard.PNG"
+										alt="picture of website"
+										class="card-img-top border-0"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">
+											Weather Dashboard
+										</h5>
+										<p class="card-text">
+											This weather dashboard gives you the
+											current and 5-day forecast for a
+											city. It also saves your recent
+											weather searches.
+										</p>
+										<div class="card-footer border-0">
+											<h6 class="card-title">
+												Technologies
+											</h6>
+											<ul>
+												<li>Day.js</li>
+												<li>Bulma</li>
+												<li>jQuery</li>
+												<li>Font Awesome</li>
+												<li>Open Weather API</li>
+											</ul>
+											<a
+												class="btn btn-primary"
+												href="https://benjdg.github.io/06_Weather_Dashboard/"
+												>link
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- contact section -->
+		<div class="contact-color">
+			<div class="container">
+				<section id="contact" class="contact-section">
+					<h2>Contact</h2>
+					<hr />
+					<p>Contact me</p>
+				</section>
+			</div>
+		</div>
+
+	
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
