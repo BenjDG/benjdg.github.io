@@ -82,7 +82,6 @@ $(document).ready(function () {
   });
 
   function cardFactory(arr) {
-    console.log(arr.idWord);
     $colMainDiv = $('<div>').attr('class', 'col mb-4');
 
     $cardDiv = $('<div>').attr({
