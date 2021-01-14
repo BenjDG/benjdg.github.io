@@ -4,7 +4,7 @@ $(document).ready(function () {
   const data = [
     {
       idWord: 'note',
-      imgSrc: './Assets/Images/leave-a-note.png',
+      imgSrc: './Assets/Images/leave-a-note.PNG',
       siteTitle: 'Leave A Note',
       siteDescription:
         'Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.',
