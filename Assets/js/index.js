@@ -3,11 +3,31 @@ $(document).ready(function () {
 
   const data = [
     {
+      idWord: 'note',
+      imgSrc: './Assets/Images/leave-a-note.png',
+      siteTitle: 'Leave A Note',
+      siteDescription:
+        'Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.',
+      url: 'https://project-leave-a-note.herokuapp.com/',
+      tech: [
+        'Node.js',
+        'Express.js',
+        'Sequelize',
+        'MySql',
+        'Git',
+        'Heroku',
+        'CICD',
+        'Semistandard.js',
+        'Passport.js',
+        'Handlebars.js'
+      ]
+    },
+    {
       idWord: 'travel',
       imgSrc: './Assets/Images/travel-planner.png',
       siteTitle: 'Travel Planner',
       siteDescription:
-        'This web application retrieves different information about a location. It includes information about the weather forecast upcoming events, and a map of the location.',
+        'Developed in a team, this web application retrieves different information about a location. It includes information about the weather forecast upcoming events, and a map of the location.',
       url: 'https://benjdg.github.io/Travel_App/',
       tech: [
         'Day.js',
