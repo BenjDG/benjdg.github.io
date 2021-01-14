@@ -38,6 +38,16 @@ box-shadow: 10px 10px 5px;
 	padding: 8rem 0 20rem;
 }
 
+.loader {
+	margin-top: 15rem;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
 @media screen and (max-width: 480px) {
 	.about-color {
 		padding: 1rem 0 4rem;
