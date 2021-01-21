@@ -9,6 +9,7 @@ $(document).ready(function () {
       siteDescription:
         'Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.',
       url: 'https://project-leave-a-note.herokuapp.com/',
+      github: 'https://github.com/BenjDG/Leave_A_Note',
       tech: [
         'Node.js',
         'Express.js',
@@ -29,6 +30,7 @@ $(document).ready(function () {
       siteDescription:
         'Developed in a team, this web application retrieves different information about a location. It includes information about the weather forecast upcoming events, and a map of the location.',
       url: 'https://benjdg.github.io/Travel_App/',
+      github: 'https://github.com/BenjDG/Travel_App',
       tech: [
         'Day.js',
         'Bulma',
@@ -47,6 +49,7 @@ $(document).ready(function () {
       siteDescription:
         'This is a web application that locally persists events into a work day scheduler.',
       url: 'https://benjdg.github.io/05_Work_Day_Scheduler/',
+      github: 'https://github.com/BenjDG/05_Work_Day_Scheduler',
       tech: ['Day.js', 'Bulma', 'jQuery', 'Font Awesome', 'Open Weather API']
     },
     {
@@ -56,6 +59,7 @@ $(document).ready(function () {
       siteDescription:
         'This weather dashboard gives you the current and 5-day forecast for a city. It also saves your recent weather searches.',
       url: 'https://benjdg.github.io/06_Weather_Dashboard/',
+      github: 'https://github.com/BenjDG/06_Weather_Dashboard',
       tech: ['Day.js', 'Bulma', 'jQuery', 'Font Awesome', 'Open Weather API']
     },
     {
@@ -65,6 +69,7 @@ $(document).ready(function () {
       siteDescription:
         'This app takes names of burgers and saves them to a database. Then you can virtually eat the burgers and the database record will be updated and the item moved to a different list.',
       url: 'https://polar-hamlet-57397.herokuapp.com/',
+      github: 'https://github.com/BenjDG/13_Eat_Da_Burger_App',
       tech: [
         'Node.js',
         'Express.js',
@@ -106,16 +111,34 @@ $(document).ready(function () {
       .attr('class', 'card-title')
       .text('Technologies');
     $cardTechList = $('<ul>');
+
+    $liveBtn = $('<button>').attr({
+      type: 'button',
+      class: 'btn btn-primary m-1'
+    }).text('Deployed Site');
+
+    $codeBtn = $('<button>').attr({
+      type: 'button',
+      id: `${arr.idWord}-code-button`,
+      class: 'btn btn-danger m-1'
+    }).text('Show me code');
+
     arr.tech.forEach(item => {
       $cardListItem = $('<li>').text(item);
       $cardListItem.appendTo($cardTechList);
     });
     $cardFooterTitle.appendTo($cardFooterWrap);
     $cardTechList.appendTo($cardFooterWrap);
+    $liveBtn.appendTo($cardFooterWrap);
+    $codeBtn.appendTo($cardFooterWrap);
     $cardFooterWrap.appendTo($cardWrapper);
     $colMainDiv.appendTo($mySites);
     $(`#${arr.idWord}`).on('click', function () {
       window.location = arr.url;
+    });
+    $(`#${arr.idWord}-code-button`).on('click', function (e) {
+      e.stopPropagation();
+      window.location = arr.github;
     });
   }
 });
