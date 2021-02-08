@@ -3,6 +3,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
 import Sites from '../components/Sites';
+import './styles.css';
 
 function Home() {
   return (
