@@ -1,11 +1,14 @@
+import { Box, Typography } from '@material-ui/core';
 import React from "react";
-// import "./styles.css";
 
 function Contact () {
   return (
-    <div className="container">
-      <section id="contact" className="contact-section">
-        <h2>Contact Me</h2>
+      <section id="contact">
+        <Typography variant='h4'>
+          <Box lineHeight={2} m={0}>
+            Contact Me
+            </Box>
+        </Typography>
         <hr />
         <div className="row contact-icons">
           <div className="col text-center">
@@ -25,7 +28,6 @@ function Contact () {
           </div>
         </div>
       </section>
-    </div>
   )
 }
 

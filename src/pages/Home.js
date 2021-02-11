@@ -7,6 +7,7 @@ import Sites from '../components/Sites';
 import './styles.css';
 
 function Home () {
+
   return (
     <div>
       <Grid container direction='column' spacing={5}>
