@@ -27,15 +27,22 @@ function Home () {
           <Nav />
         </Grid>
         <Grid item container>
-          <Grid item>
+          <Grid item xs={2}/>
+          <Grid item xs={8}>
             <About />
           </Grid>
-          <Grid item>
+          <Grid item xs={2}/>
+
+          <Grid item xs={2}/>
+          <Grid item xs={8}>
             <Sites />
           </Grid>
-          <Grid item>
+          <Grid item xs={2}/>
+          <Grid item xs={2}/>
+          <Grid item xs={8}>
             <Contact />
           </Grid>
+          <Grid item xs={2}/>
         </Grid>
       </Grid>
     </div>
