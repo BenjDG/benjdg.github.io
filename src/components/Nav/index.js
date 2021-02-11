@@ -1,9 +1,27 @@
 import React from "react";
+import { AppBar, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
+import MenuIcon from '@material-ui/icons/Menu';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 function Nav () {
+  const classes = useStyles();
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <h2 className="m-2">Ben Galloway</h2>
+    <div>
+      <AppBar position='static'>
+        <Toolbar>
+          <Typography>Ben Galloway</Typography>
+
       <button
         className="navbar-toggler"
         data-toggle="collapse"
@@ -27,7 +45,12 @@ function Nav () {
           </li>
         </ul>
       </div>
-    </nav>
+      <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+      <MenuIcon />
+    </IconButton>
+      </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 
