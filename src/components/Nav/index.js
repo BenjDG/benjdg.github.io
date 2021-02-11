@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AppBar, ClickAwayListener, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Box, ClickAwayListener, Grid, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +41,6 @@ function Nav () {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
-
   };
 
   const handleClose = (event) => {
@@ -60,23 +59,33 @@ function Nav () {
     <div>
       <AppBar position='static'>
         <Toolbar>
-          <Typography className={classes.typographyStyle}>Ben Galloway</Typography>
-          <ClickAwayListener onClickAway={handleClickAway}>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" aria-haspopup="true" onClick={handleClick}>
-              <MenuIcon />
-            </IconButton>
-          </ClickAwayListener>
-          <Menu
-            id="menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <MenuItem onClick={handleClose}>About Me</MenuItem>
-            <MenuItem onClick={handleClose}>Portfolio</MenuItem>
-            <MenuItem onClick={handleClose}>Contact</MenuItem>
-          </Menu>
+          <Grid container>
+            <Grid item xs={2} />
+            <Grid item container xs={8}>
+              <Typography className={classes.typographyStyle} variant='h5'>
+                <Box lineHeight={2} m={0}>
+                  Ben Galloway
+                </Box>
+              </Typography>
+              <ClickAwayListener onClickAway={handleClickAway}>
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" aria-haspopup="true" onClick={handleClick}>
+                  <MenuIcon />
+                </IconButton>
+              </ClickAwayListener>
+              <Menu
+                id="menu"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>About Me</MenuItem>
+                <MenuItem onClick={handleClose}>Portfolio</MenuItem>
+                <MenuItem onClick={handleClose}>Contact</MenuItem>
+              </Menu>
+            </Grid>
+            <Grid item xs={2} />
+          </Grid>
         </Toolbar>
       </AppBar>
     </div>

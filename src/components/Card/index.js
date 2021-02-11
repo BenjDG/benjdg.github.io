@@ -1,6 +1,6 @@
 import React from "react";
 import TechListItem from '../TechListItem';
-import "./styles.css";
+// import "./styles.css";
 
 function Card ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech }) {
 
