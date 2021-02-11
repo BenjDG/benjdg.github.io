@@ -1,20 +1,19 @@
-import { Grid } from '@material-ui/core';
+import { Grid, useTheme } from '@material-ui/core';
 import React from "react";
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
 import Sites from '../components/Sites';
-// import './styles.css';
-
+import './styles.css';
 
 function Home () {
   return (
     <div>
-      <Grid container direction='column'>
+      <Grid container direction='column' spacing={5}>
         <Grid item>
           <Nav />
         </Grid>
-        <Grid item container>
+        <Grid item container spacing={10}>
           <Grid item xs={2}/>
           <Grid item xs={8}>
             <About />

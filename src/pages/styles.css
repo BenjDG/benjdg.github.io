@@ -4,28 +4,3 @@ body {
 	scroll-behavior: smooth;
 }
 
-body {
-	background-color: #ffffff;
-}
-
-h2 {
-	font-family: "Cardo", serif;
-}
-
-.portfolio-color {
-	padding: 8rem 0 10rem;
-}
-
-.portfolio-section {
-	padding: 5rem;
-}
-
-
-@media screen and (max-width: 480px) {
-	.portfolio-color {
-		padding: 1rem 0 4rem;
-	}
-	.portfolio-section {
-		padding: 1rem;
-	}
-}
