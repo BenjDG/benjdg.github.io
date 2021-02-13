@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
 import Home from './pages/Home';
 
-
-function App() {
+function App () {
   return (
     <div>
       <Home />
