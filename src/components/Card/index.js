@@ -23,8 +23,8 @@ function Card ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech }
             <ul>
               {tech.map((item, index) => (<TechListItem key={index} item={item} />))}
             </ul>
-            <button type='button' className='btn btn-primary m-1' onClick={handleSiteClick}>Deployed Site</button>
-            <button type='button' id={idword + '-code-button'} className='btn btn-danger m-1' onClick={handleCodeClick}>Show me code</button>
+            <button type='button' className='btn btn-primary btn-block m-1' onClick={handleSiteClick}>Deployed Site</button>
+            <button type='button' id={idword + '-code-button'} className='btn btn-danger btn-block m-1' onClick={handleCodeClick}>Show me code</button>
           </div>
         </div>
       </div>

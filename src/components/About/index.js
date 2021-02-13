@@ -11,7 +11,7 @@ function About () {
           <hr />
           <img
             src={pic}
-            className='img-fluid float-left p-4'
+            className='img-fluid float-left p-4 m-md-4'
             alt='me'
           />
           <p className='p-4'>
