@@ -1,10 +1,5 @@
 import React from 'react';
 import TechListItem from '../TechListItem';
-<<<<<<< HEAD
-import './styles.css';
-=======
-// import "./styles.css";
->>>>>>> 098d1b5... add grid to header
 
 function Card ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech }) {
   const handleCodeClick = () => {

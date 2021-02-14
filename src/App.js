@@ -16,7 +16,7 @@ function App () {
     <div>
       <ThemeProvider theme={theme}>
         <Nav />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Route exact strict path='/'>
             <Home />
           </Route>
