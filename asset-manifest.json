@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.df6bf594.chunk.css",
-    "main.js": "/static/js/main.1e212500.chunk.js",
-    "main.js.map": "/static/js/main.1e212500.chunk.js.map",
+    "main.js": "/static/js/main.0673fa2b.chunk.js",
+    "main.js.map": "/static/js/main.0673fa2b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6518f4e1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6518f4e1.js.map",
-    "static/js/2.d07d34d6.chunk.js": "/static/js/2.d07d34d6.chunk.js",
-    "static/js/2.d07d34d6.chunk.js.map": "/static/js/2.d07d34d6.chunk.js.map",
+    "static/js/2.1ba7de07.chunk.js": "/static/js/2.1ba7de07.chunk.js",
+    "static/js/2.1ba7de07.chunk.js.map": "/static/js/2.1ba7de07.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.df6bf594.chunk.css.map": "/static/css/main.df6bf594.chunk.css.map",
-    "static/js/2.d07d34d6.chunk.js.LICENSE.txt": "/static/js/2.d07d34d6.chunk.js.LICENSE.txt",
+    "static/js/2.1ba7de07.chunk.js.LICENSE.txt": "/static/js/2.1ba7de07.chunk.js.LICENSE.txt",
     "static/media/reducedSelf.56b721b5.png": "/static/media/reducedSelf.56b721b5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6518f4e1.js",
-    "static/js/2.d07d34d6.chunk.js",
-    "static/css/main.df6bf594.chunk.css",
-    "static/js/main.1e212500.chunk.js"
+    "static/js/2.1ba7de07.chunk.js",
+    "static/js/main.0673fa2b.chunk.js"
   ]
 }
