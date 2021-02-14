@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 import React from 'react';
 
 function Nav () {
   return (
     <nav className='navbar fixed-top navbar-expand-lg navbar-light bg-light'>
       <h2 className='m-2'>Ben Galloway</h2>
+=======
+import React from "react";
+import ThemeSelect from '../ThemeSelect';
+
+function Nav () {
+  return (
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <h2 className="m-2">Ben Galloway</h2>
+      <ThemeSelect />
+>>>>>>> 16d56b9... add theme select option
       <button
         className='navbar-toggler'
         data-toggle='collapse'
