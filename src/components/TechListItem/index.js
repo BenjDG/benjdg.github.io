@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-function TechListItem ({item}) {
+function TechListItem ({ item }) {
   return (
     <li>{item}</li>
-  )
+  );
 }
 
 export default TechListItem;
