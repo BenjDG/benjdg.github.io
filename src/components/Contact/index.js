@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import React from 'react';
 import './styles.css';
+=======
+import React from "react";
+// import "./styles.css";
+>>>>>>> 098d1b5... add grid to header
 
 function Contact () {
   return (

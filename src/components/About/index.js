@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React from 'react';
 import pic from './reducedSelf.png';
 import './styles.css';
+=======
+import React from "react";
+import pic from "./reducedSelf.png";
+// import "./styles.css";
+>>>>>>> 098d1b5... add grid to header
 
 function About () {
   return (

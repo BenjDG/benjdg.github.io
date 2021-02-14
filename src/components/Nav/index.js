@@ -11,8 +11,12 @@ import React from "react";
 import { AppBar, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
 =======
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { AppBar, ClickAwayListener, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
 >>>>>>> 86143f1... add hamburger button
+=======
+import { AppBar, Box, ClickAwayListener, Grid, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography } from "@material-ui/core";
+>>>>>>> 098d1b5... add grid to header
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -54,7 +58,6 @@ function Nav () {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
-
   };
 
   const handleClose = (event) => {
@@ -82,6 +85,7 @@ function Nav () {
     <div>
       <AppBar position='static'>
         <Toolbar>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Typography>Ben Galloway</Typography>
 
@@ -131,6 +135,35 @@ function Nav () {
             <MenuItem onClick={handleClose}>Portfolio</MenuItem>
             <MenuItem onClick={handleClose}>Contact</MenuItem>
           </Menu>
+=======
+          <Grid container>
+            <Grid item xs={2} />
+            <Grid item container xs={8}>
+              <Typography className={classes.typographyStyle} variant='h5'>
+                <Box lineHeight={2} m={0}>
+                  Ben Galloway
+                </Box>
+              </Typography>
+              <ClickAwayListener onClickAway={handleClickAway}>
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" aria-haspopup="true" onClick={handleClick}>
+                  <MenuIcon />
+                </IconButton>
+              </ClickAwayListener>
+              <Menu
+                id="menu"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>About Me</MenuItem>
+                <MenuItem onClick={handleClose}>Portfolio</MenuItem>
+                <MenuItem onClick={handleClose}>Contact</MenuItem>
+              </Menu>
+            </Grid>
+            <Grid item xs={2} />
+          </Grid>
+>>>>>>> 098d1b5... add grid to header
         </Toolbar>
 >>>>>>> 86143f1... add hamburger button
       </AppBar>
