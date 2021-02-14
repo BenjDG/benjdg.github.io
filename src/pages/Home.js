@@ -5,7 +5,12 @@ import Nav from '../components/Nav';
 import Sites from '../components/Sites';
 import './styles.css';
 
+<<<<<<< HEAD
 function Home () {
+=======
+
+function Home() {
+>>>>>>> 0bf3d99... add new picture
   return (
     <div>
       <Nav />
