@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Projects from './pages/Projects';
 import Nav from './components/Nav';
@@ -16,7 +16,7 @@ function App () {
     <div>
       <ThemeProvider theme={theme}>
         <Nav />
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Route exact strict path='/'>
             <Home />
           </Route>
