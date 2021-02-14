@@ -1,17 +1,17 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
-import About from '../components/About';
+import Contact from '../components/Contact';
 
-function Home () {
+function ContactMe () {
   return (
     <Grid container>
       <Grid item xs={2} />
       <Grid item xs={8}>
-        <About />
+        <Contact />
       </Grid>
       <Grid item xs={2} />
     </Grid>
   );
 }
 
-export default Home;
+export default ContactMe;
