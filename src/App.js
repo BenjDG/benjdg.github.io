@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Projects from './pages/Projects';
 import Nav from './components/Nav';
