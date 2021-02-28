@@ -61,24 +61,6 @@
     "tech": ["Day.js", "Bulma", "jQuery", "Font Awesome", "Open Weather API"]
   },
   {
-    "idWord": "burger",
-    "imgSrc": "./images/burger.PNG",
-    "siteTitle": "Eat the Burger",
-    "siteDescription":
-      "This app takes names of burgers and saves them to a database. Then you can virtually eat the burgers and the database record will be updated and the item moved to a different list.",
-    "url": "https://polar-hamlet-57397.herokuapp.com/",
-    "github": "https://github.com/BenjDG/13_Eat_Da_Burger_App",
-    "tech": [
-      "Node.js",
-      "Express.js",
-      "MySql",
-      "MVC",
-      "ORM",
-      "Handlebars",
-      "Heroku"
-    ]
-  },
-  {
     "idWord": "user_directory",
     "imgSrc": "./images/user-directory.PNG",
     "siteTitle": "Employee Directory",
