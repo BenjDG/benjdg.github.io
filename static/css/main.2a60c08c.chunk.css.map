@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/styles.css"],"names":[],"mappings":"AAAA,UAEC,WAAY,CACZ,sBACD","file":"main.2a60c08c.chunk.css","sourcesContent":["html,\r\nbody {\r\n\theight: 100%;\r\n\tscroll-behavior: smooth;\r\n}\r\n\r\n"]}
