@@ -8,7 +8,8 @@ import './styles.css';
 
 const useStyles = makeStyles(theme => ({
   home: {
-    margin: theme.spacing(4)
+    paddingTop: theme.spacing(10),
+    paddingBottom: theme.spacing(30)
   }
 }));
 
@@ -25,7 +26,7 @@ function Home () {
           <Grid item xs={2} />
         </Grid>
       </Box>
-      <Box>
+      <Box className={classes.home}>
         <Grid container>
           <Grid item xs={2} />
           <Grid item xs={8}>
@@ -34,7 +35,7 @@ function Home () {
           <Grid item xs={2} />
         </Grid>
       </Box>
-      <Box>
+      <Box className={classes.home}>
         <Grid container>
           <Grid item xs={2} />
           <Grid item xs={8}>
