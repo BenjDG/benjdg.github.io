@@ -7,7 +7,7 @@ import { CssBaseline } from '@material-ui/core';
 const theme = createMuiTheme({
   spacing: 12,
   typography: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: [
       'serif'
     ]
