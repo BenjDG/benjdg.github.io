@@ -22,12 +22,12 @@ function Nav () {
           <Grid container>
             <Grid item xs={2} />
             <Grid item container xs={8}>
-              <Typography className={classes.typographyStyle} variant='h5'>
+              <Typography component='span' className={classes.typographyStyle} variant='h5'>
                 <Box lineHeight={2} m={0}>
                   Ben Galloway
                 </Box>
               </Typography>
-              <Typography className={classes.root}>
+              <Typography component='span' className={classes.root}>
                 <Box lineHeight={1} p={1}>
                   <Link href='#about-me' color='inherit'> About Me </Link>
                   <Link href='#portfolio' color='inherit'> Projects </Link>

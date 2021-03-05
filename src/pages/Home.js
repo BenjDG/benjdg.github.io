@@ -1,33 +1,48 @@
-import { Grid } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import About from '../components/About';
 import Sites from '../components/Sites';
 import Contact from '../components/Contact';
+import './styles.css';
+
+const useStyles = makeStyles(theme => ({
+  home: {
+    margin: theme.spacing(4)
+  }
+}));
 
 function Home () {
+  const classes = useStyles();
   return (
     <div>
-      <Grid container>
-        <Grid item xs={2} />
-        <Grid item xs={8}>
-          <About />
+      <Box className={classes.home}>
+        <Grid container>
+          <Grid item xs={2} />
+          <Grid item xs={8}>
+            <About />
+          </Grid>
+          <Grid item xs={2} />
         </Grid>
-        <Grid item xs={2} />
-      </Grid>
-      <Grid container>
-        <Grid item xs={2} />
-        <Grid item xs={8}>
-          <Sites />
+      </Box>
+      <Box>
+        <Grid container>
+          <Grid item xs={2} />
+          <Grid item xs={8}>
+            <Sites />
+          </Grid>
+          <Grid item xs={2} />
         </Grid>
-        <Grid item xs={2} />
-      </Grid>
-      <Grid container>
-        <Grid item xs={2} />
-        <Grid item xs={8}>
-          <Contact />
+      </Box>
+      <Box>
+        <Grid container>
+          <Grid item xs={2} />
+          <Grid item xs={8}>
+            <Contact />
+          </Grid>
+          <Grid item xs={2} />
         </Grid>
-        <Grid item xs={2} />
-      </Grid>
+      </Box>
     </div>
   );
 }
