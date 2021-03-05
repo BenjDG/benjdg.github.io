@@ -62,7 +62,7 @@ function MyCard ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech
             </CardContent>
           </Grid>
 
-          <Grid item alignItems='flex-end'>
+          <Grid item container alignItems='flex-end'>
             <CardActions>
               <Button size='small' color='primary' variant='outlined' onClick={handleSiteClick}>
                 Deployed Site
