@@ -8,7 +8,7 @@ import './styles.css';
 
 const useStyles = makeStyles(theme => ({
   home: {
-    paddingTop: theme.spacing(10),
+    paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(30)
   }
 }));

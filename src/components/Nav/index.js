@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
   },
   typographyStyle: {
     flex: 1
+  },
+  links: {
+    marginRight: theme.spacing(2)
   }
 }));
 
@@ -18,20 +21,20 @@ function Nav () {
   return (
     <div>
       <AppBar position='sticky'>
-        <Toolbar>
+        <Toolbar disableGutters='true'>
           <Grid container>
             <Grid item xs={2} />
             <Grid item container xs={8}>
               <Typography component='span' className={classes.typographyStyle} variant='h5'>
-                <Box lineHeight={2} m={0}>
+                <Box lineHeight={3} m={0}>
                   Ben Galloway
                 </Box>
               </Typography>
               <Typography component='span' className={classes.root}>
-                <Box lineHeight={1} p={1}>
-                  <Link href='#about-me' color='inherit'> About Me </Link>
-                  <Link href='#portfolio' color='inherit'> Projects </Link>
-                  <Link href='#contact' color='inherit'> Contact </Link>
+                <Box lineHeight={3} p={1}>
+                  <Link className={classes.links} href='#about-me' color='inherit'> About Me </Link>
+                  <Link className={classes.links} href='#portfolio' color='inherit'> Projects </Link>
+                  <Link className={classes.links} href='#contact' color='inherit'> Contact </Link>
                 </Box>
               </Typography>
             </Grid>
