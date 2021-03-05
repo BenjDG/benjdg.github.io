@@ -29,9 +29,9 @@ function Nav () {
               </Typography>
               <Typography className={classes.root}>
                 <Box lineHeight={1} p={1}>
-                  <Link href='/#/' color='inherit'> About Me </Link>
-                  <Link href='/#/projects' color='inherit'> Projects </Link>
-                  <Link href='/#/contact' color='inherit'> Contact </Link>
+                  <Link href='#about-me' color='inherit'> About Me </Link>
+                  <Link href='#portfolio' color='inherit'> Projects </Link>
+                  <Link href='#contact' color='inherit'> Contact </Link>
                 </Box>
               </Typography>
             </Grid>
