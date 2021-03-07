@@ -41,26 +41,6 @@
     ]
   },
   {
-    "idWord": "workday",
-    "imgSrc": "./images/work-day.PNG",
-    "siteTitle": "Work Day Scheduler",
-    "siteDescription":
-      "This is a web application that locally persists events into a work day scheduler.",
-    "url": "https://benjdg.github.io/05_Work_Day_Scheduler/",
-    "github": "https://github.com/BenjDG/05_Work_Day_Scheduler",
-    "tech": ["Luxon.js", "Bootstrap", "jQuery", "Font Awesome"]
-  },
-  {
-    "idWord": "weather",
-    "imgSrc": "./images/weather-dashboard.PNG",
-    "siteTitle": "Weather Dashboard",
-    "siteDescription":
-      "This weather dashboard gives you the current and 5-day forecast for a city. It also saves your recent weather searches.",
-    "url": "https://benjdg.github.io/06_Weather_Dashboard/",
-    "github": "https://github.com/BenjDG/06_Weather_Dashboard",
-    "tech": ["Day.js", "Bulma", "jQuery", "Font Awesome", "Open Weather API"]
-  },
-  {
     "idWord": "user_directory",
     "imgSrc": "./images/user-directory.PNG",
     "siteTitle": "Employee Directory",
@@ -70,8 +50,11 @@
     "github": "https://github.com/BenjDG/user_directory",
     "tech": [
       "React.js",
-      "Material-ui",
-      "yarn"
+      "Material-UI",
+      "yarn",
+      "GitHub Pages",
+      "Axios",
+      "Sorting"
     ]
   },
   {
