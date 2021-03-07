@@ -35,7 +35,7 @@ function MyCard ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech
   };
 
   return (
-    <Grid item xs={6}>
+    <Grid item xs={12} sm={12} md={6}>
       <Card className={classes.card}>
         <div id={idword}>
           <Box border={7} borderRadius='50%'>
