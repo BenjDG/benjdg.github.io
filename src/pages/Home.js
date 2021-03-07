@@ -9,7 +9,7 @@ import './styles.css';
 const useStyles = makeStyles(theme => ({
   home: {
     paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(30)
+    paddingBottom: theme.spacing(20)
   }
 }));
 
