@@ -21,7 +21,7 @@ function Nav () {
   return (
     <div>
       <AppBar position='sticky'>
-        <Toolbar disableGutters='true'>
+        <Toolbar disableGutters>
           <Grid container>
             <Grid item xs={2} />
             <Grid item container xs={8}>
