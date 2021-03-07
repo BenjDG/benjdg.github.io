@@ -33,10 +33,10 @@ function Nav () {
       <AppBar position='sticky'>
         <Toolbar disableGutters>
           <Grid container>
-            <Grid item xs={1} sm={2} />
-            <Grid item container xs={10} sm={8}>
+            <Grid item xs='auto' sm={2} />
+            <Grid item container xs={12} sm={8}>
               <Typography component='span' className={classes.typographyStyle} variant='h5'>
-                <Box lineHeight={3} m={0}>
+                <Box lineHeight={3} pl={2}>
                   Ben Galloway
                 </Box>
               </Typography>
@@ -59,7 +59,7 @@ function Nav () {
                 </Box>
               </Typography>
             </Grid>
-            <Grid item xs={1} sm={2} />
+            <Grid item xs='auto' sm={2} />
           </Grid>
         </Toolbar>
       </AppBar>
