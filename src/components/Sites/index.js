@@ -12,7 +12,7 @@ function Sites () {
         </Box>
       </Typography>
       <hr />
-      <Grid container alignItems='stretch'>
+      <Grid container spacing={2}>
         {data.data.map(({ idword, imgSrc, siteTitle, siteDescription, url, github, tech }) => (
           <MyCard key={url} idword={idword} imgSrc={imgSrc} siteTitle={siteTitle} siteDescription={siteDescription} url={url} github={github} tech={tech} />
         ))}
