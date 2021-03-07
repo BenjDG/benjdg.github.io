@@ -46,8 +46,8 @@
     "siteTitle": "Employee Directory",
     "siteDescription":
       "An example employee directory that uses Reactjs. You can sort the data alphabetically by column or you can use the search bar to find an employee.",
-    "url": "https://benjdg.github.io/user_directory/",
-    "github": "https://github.com/BenjDG/user_directory",
+    "url": "https://benjdg.github.io/Employee_directory",
+    "github": "https://github.com/BenjDG/Employee_directory",
     "tech": [
       "React.js",
       "Material-UI",
