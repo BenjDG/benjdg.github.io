@@ -1,5 +1,6 @@
 import React from 'react';
-import { AppBar, Box, Grid, Link, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Box, Button, Grid, Link, makeStyles, Menu, MenuItem, Toolbar, Typography } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -10,21 +11,30 @@ const useStyles = makeStyles((theme) => ({
   typographyStyle: {
     flex: 1
   },
-  links: {
-    marginRight: theme.spacing(2)
+  menu: {
+    color: 'white'
   }
 }));
 
 function Nav () {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <div>
       <AppBar position='sticky'>
-        <Toolbar disableGutters='true'>
+        <Toolbar disableGutters>
           <Grid container>
-            <Grid item xs={2} />
-            <Grid item container xs={8}>
+            <Grid item xs={1} sm={2} />
+            <Grid item container xs={10} sm={8}>
               <Typography component='span' className={classes.typographyStyle} variant='h5'>
                 <Box lineHeight={3} m={0}>
                   Ben Galloway
@@ -32,13 +42,24 @@ function Nav () {
               </Typography>
               <Typography component='span' className={classes.root}>
                 <Box lineHeight={3} p={1}>
-                  <Link className={classes.links} href='#about-me' color='inherit'> About Me </Link>
-                  <Link className={classes.links} href='#portfolio' color='inherit'> Projects </Link>
-                  <Link className={classes.links} href='#contact' color='inherit'> Contact </Link>
+                  <Button aria-controls='scroll-menu' aria-haspopup='true' onClick={handleClick}>
+                    <MenuIcon className={classes.menu} />
+                  </Button>
+                  <Menu
+                    id='scroll-menu'
+                    anchorEl={anchorEl}
+                    keepMounted
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                  >
+                    <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} href='#about-me' color='inherit'> About Me </Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} href='#portfolio' color='inherit'> Projects </Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} href='#contact' color='inherit'> Contact </Link></MenuItem>
+                  </Menu>
                 </Box>
               </Typography>
             </Grid>
-            <Grid item xs={2} />
+            <Grid item xs={1} sm={2} />
           </Grid>
         </Toolbar>
       </AppBar>
