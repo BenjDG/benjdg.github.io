@@ -17,8 +17,9 @@ function About () {
         alignItems='center'
       >
         <Grid item xs={12} sm={12} md={5}>
-          <Box ml={2} mt={2}>
+          <Box m='auto'>
             <img
+              style={{ margin: '2rem auto', display: 'block' }}
               src={pic}
               alt='me'
             />
