@@ -1,24 +1,23 @@
 {
   "data": [
   {
-    "idWord": "note",
-    "imgSrc": "./images/leave-a-note.PNG",
-    "siteTitle": "Leave A Note",
+    "idWord": "order",
+    "imgSrc": "./images/easy-order.PNG",
+    "siteTitle": "Easy Order",
     "siteDescription":
-      "Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.",
-    "url": "https://project-leave-a-note.herokuapp.com/",
-    "github": "https://github.com/BenjDG/Leave_A_Note",
+      "Developed in a team, this is a point of sale MERN application for a small restaurant. It handles order taking, order views and order payment.",
+    "url": "https://easyorder3.herokuapp.com/",
+    "github": "https://github.com/BenjDG/easyserve3",
     "tech": [
-      "Node.js",
+      "MySQL",
       "Express.js",
-      "Sequelize",
-      "MySql",
-      "Git",
-      "Heroku",
-      "CICD",
-      "Semistandard.js",
+      "React.js",
+      "Node.js",
+      "Stripe API",
+      "Sequelize.js",
       "Passport.js",
-      "Handlebars.js"
+      "Material-UI",
+      "Git"
     ]
   },
   {
@@ -73,6 +72,27 @@
       "Express.js",
       "Heroku",
       "Continuous Deployment"
+    ]
+  },
+  {
+    "idWord": "note",
+    "imgSrc": "./images/leave-a-note.PNG",
+    "siteTitle": "Leave A Note",
+    "siteDescription":
+      "Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.",
+    "url": "https://project-leave-a-note.herokuapp.com/",
+    "github": "https://github.com/BenjDG/Leave_A_Note",
+    "tech": [
+      "Node.js",
+      "Express.js",
+      "Sequelize.js",
+      "MySql",
+      "Git",
+      "Heroku",
+      "CICD",
+      "Semistandard.js",
+      "Passport.js",
+      "Handlebars.js"
     ]
   }
 ]
