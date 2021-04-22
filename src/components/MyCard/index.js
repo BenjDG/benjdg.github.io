@@ -3,23 +3,25 @@ import TechListItem from '../TechListItem';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import { Box, Button, CardActions, CardContent, CardMedia, Grid, List, Typography } from '@material-ui/core';
-import './styles.css';
 
 const useStyles = makeStyles((theme) => ({
   card: {
     display: 'flex',
     gridGap: '8px',
     borderRadius: '20px',
-    boxShadow: '5px 5px 10px 0px #000000'
+    boxShadow: '5px 5px 10px 0px #000000',
+    height: '80rem'
   },
   body: {
     textAlign: 'start',
-    minHeight: theme.spacing(45)
+    minHeight: theme.spacing(45),
   },
   media: {
-    height: 400,
     borderRadius: '20px',
-    boxShadow: '5px 5px 10px 0px #000000'
+    borderBottom: '1px solid #000',
+    padding: '5px',
+    width: '100%',
+    height: '50%'
   },
   action: {
     justifyContent: 'center'
