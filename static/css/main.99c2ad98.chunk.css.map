@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/MyCard/styles.css","webpack://src/pages/styles.css"],"names":[],"mappings":"AAAA,cACE,kBACF,CCFA,UAEC,WAAY,CACZ,sBACD","file":"main.99c2ad98.chunk.css","sourcesContent":[".rounded-card {\r\n  border-radius: 50px;\r\n}","html,\r\nbody {\r\n\theight: 100%;\r\n\tscroll-behavior: smooth;\r\n}\r\n\r\n"]}
