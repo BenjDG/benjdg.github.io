@@ -2,29 +2,34 @@ import React from 'react';
 import TechListItem from '../TechListItem';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import { Box, Button, CardActions, CardContent, CardMedia, Grid, List, Typography } from '@material-ui/core';
+import { Box, Button, CardActions, CardContent, CardHeader, CardMedia, Grid, List, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   card: {
     display: 'flex',
+    justifyContent: 'space-around',
     gridGap: '8px',
     borderRadius: '20px',
     boxShadow: '5px 5px 10px 0px #000000',
-    height: '80rem'
+  },
+  inner: {
+    display: 'flex',
+    flexDirection: 'column'
   },
   body: {
     textAlign: 'start',
-    minHeight: theme.spacing(45),
+    flexGrow: 1
   },
   media: {
     borderRadius: '20px',
-    borderBottom: '1px solid #000',
+    border: '1px solid #000',
     padding: '5px',
     width: '100%',
-    height: '50%'
+    height: '30%'
   },
   action: {
-    justifyContent: 'center'
+    display: 'flex',
+    alignSelf: 'center'
   }
 }));
 
@@ -42,30 +47,24 @@ function MyCard ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech
   return (
     <Grid item xs={12} sm={12} md={6}>
       <Card className={classes.card}>
-        <div id={idword}>
-            <CardMedia
-              component='img'
-              className={classes.media}
-              image={imgSrc}
-              title={siteTitle + ' website screenshot'}
+        <div id={idword} className={classes.inner}>
+            <CardHeader
+              title={siteTitle}
+              subheader={siteDescription}
             />
+          <CardMedia
+            component='img'
+            className={classes.media}
+            image={imgSrc}
+            title={siteTitle + ' website screenshot'}
+          />
           <CardContent className={classes.body}>
-            <Box p={2}>
-              <Typography variant='h5' component='h2'>
-                {siteTitle}
-              </Typography>
-              <Typography variant='body2' color='textSecondary' component='p'>
-                {siteDescription}
-              </Typography>
-            </Box>
-            <Box p={2}>
-              <Typography variant='h5' component='h3'>
+              <Typography variant='h5'>
                 Technologies
               </Typography>
               <List>
                 {tech.map((item, index) => (<TechListItem key={index} item={item} />))}
               </List>
-            </Box>
           </CardContent>
 
           <CardActions className={classes.action}>
