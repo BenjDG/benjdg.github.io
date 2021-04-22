@@ -8,15 +8,18 @@ import './styles.css';
 const useStyles = makeStyles((theme) => ({
   card: {
     display: 'flex',
-    gridGap: '8px'
+    gridGap: '8px',
+    borderRadius: '20px',
+    boxShadow: '5px 5px 10px 0px #000000'
   },
   body: {
     textAlign: 'start',
     minHeight: theme.spacing(45)
   },
   media: {
-    height: 300,
-    borderRadius: '50%'
+    height: 400,
+    borderRadius: '20px',
+    boxShadow: '5px 5px 10px 0px #000000'
   },
   action: {
     justifyContent: 'center'
@@ -38,14 +41,12 @@ function MyCard ({ idword, imgSrc, siteTitle, siteDescription, url, github, tech
     <Grid item xs={12} sm={12} md={6}>
       <Card className={classes.card}>
         <div id={idword}>
-          <Box border={7} borderRadius='50%'>
             <CardMedia
               component='img'
               className={classes.media}
               image={imgSrc}
               title={siteTitle + ' website screenshot'}
             />
-          </Box>
           <CardContent className={classes.body}>
             <Box p={2}>
               <Typography variant='h5' component='h2'>
