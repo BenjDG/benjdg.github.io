@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.f35f32bd.css","mappings":"AAAA,UAEC,WAAY,CAEZ,sBAAuB,CADtB,UAEF","sources":["pages/styles.css"],"sourcesContent":["html,\nbody {\n\theight: 100%;\n  width: 100%;\n\tscroll-behavior: smooth;\n}"],"names":[],"sourceRoot":""}
