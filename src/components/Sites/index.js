@@ -8,7 +8,7 @@ function Sites () {
     <section id='portfolio'>
       <Typography variant='h4'>
         <Box lineHeight={2} m={0}>
-          Portfolio
+          Projects
         </Box>
       </Typography>
       <hr />

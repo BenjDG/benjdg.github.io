@@ -19,7 +19,7 @@ function About () {
         <Grid item xs={12} sm={12} md={5}>
           <Box m='auto'>
             <img
-              style={{ margin: '2rem auto', display: 'block' }}
+              style={{ height: '20rem', margin: '2rem', display: 'block' }}
               src={pic}
               alt='me'
             />
@@ -27,8 +27,8 @@ function About () {
         </Grid>
         <Grid item xs={12} sm={12} md={7}>
           <Box mx='auto' p={1}>
-            <p>
-              My name is Ben. As a recent graduate of the University of Kansas Full-Stack coding bootcamp, I have new skills in JavaScript, React.js, Node.js and responsive web design. Being a self-starter and intellectual, I also enjoy learning new skills and collaborating in teams to maintain and create web applications. A bachelor’s degree in education and 5 years as a Systems Engineer give me a great foundation to build my skills upon. Working in education, healthcare and government give me inside background knowledge to create effective and user-first web applications. I enjoy writing code and employing new technologies to improve the efficiency, effectiveness and quality of the product and business.
+            <p style={{textIndent: '30px'}}>
+            Software Developer that loves to code and learn. A proactive self-starter who thrives on continuous learning and relishes the challenge of mastering new skills. My journey in programming has led me to become proficient in a range of languages including Python, PL/SQL, SQL,Node.js, React.js, and JavaScript. I'm also comfortable with Linux, Git, Github, and CI/CD pipelines. I also enjoy working with all kinds of databases including Oracle, SQL Server, MySQL, MongoDB, and others. I also have experience working with Postman, REST, and other API technologies. I'm also knowledgable in the software lifecycle development process, as well as Agile and working with Jira. Over 8 years of technology experience from healthcare, higher education and government. I also enjoy working in a team and collaborating with other developers.  
             </p>
           </Box>
         </Grid>

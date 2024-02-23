@@ -1,26 +1,6 @@
 {
   "data": [
   {
-    "idWord": "order",
-    "imgSrc": "./images/easy-order.PNG",
-    "siteTitle": "Easy Order",
-    "siteDescription":
-      "Developed in a team, this is a point of sale MERN application for a small restaurant. It handles order taking, order views and order payment.",
-    "url": "https://easyorder3.herokuapp.com/",
-    "github": "https://github.com/BenjDG/easyserve3",
-    "tech": [
-      "MySQL",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "Stripe API",
-      "Sequelize.js",
-      "Passport.js",
-      "Material-UI",
-      "Git"
-    ]
-  },
-  {
     "idWord": "travel",
     "imgSrc": "./images/travel-planner.png",
     "siteTitle": "Travel Planner",
@@ -54,45 +34,6 @@
       "GitHub Pages",
       "Axios",
       "Sorting"
-    ]
-  },
-  {
-    "idWord": "budget",
-    "imgSrc": "./images/budget.PNG",
-    "siteTitle": "Online/Offline Budget Tracker",
-    "siteDescription":
-      "This is a budget tracker app that has been upgraded to work online and offline. The app syncs to the server when there is an internet connection, but it can also work offline and then will sync the data the next time an internet connection is detected. This progressive web application utilizes browser caching and IndexedDB.",
-    "url": "https://offline-online-budget-tracker1.herokuapp.com/",
-    "github": "https://github.com/BenjDG/Offline_Online_Budget_Tracker",
-    "tech": [
-      "MongoDB",
-      "PWA",
-      "IndexedDB",
-      "Node.js",
-      "Express.js",
-      "Heroku",
-      "Continuous Deployment"
-    ]
-  },
-  {
-    "idWord": "note",
-    "imgSrc": "./images/leave-a-note.PNG",
-    "siteTitle": "Leave A Note",
-    "siteDescription":
-      "Developed in a team, this full-stack application allows users signup, login, and leave a note for their groups. It also allows them to view notes left for them by other users in their group.",
-    "url": "https://project-leave-a-note.herokuapp.com/",
-    "github": "https://github.com/BenjDG/Leave_A_Note",
-    "tech": [
-      "Node.js",
-      "Express.js",
-      "Sequelize.js",
-      "MySql",
-      "Git",
-      "Heroku",
-      "CICD",
-      "Semistandard.js",
-      "Passport.js",
-      "Handlebars.js"
     ]
   }
 ]
