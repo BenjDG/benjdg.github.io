@@ -6,7 +6,7 @@ function About () {
   return (
     <section id='about-me'>
       <Typography variant='h4'>
-        <Box lineHeight={2} m={0}>
+        <Box lineHeight={2} m={0} p={1}>
           About Me
         </Box>
       </Typography>

@@ -5,7 +5,7 @@ function Contact () {
   return (
     <section id='contact'>
       <Typography variant='h4'>
-        <Box lineHeight={2} m={0}>
+        <Box lineHeight={2} m={0} p={1}>
           Contact Me
         </Box>
       </Typography>
