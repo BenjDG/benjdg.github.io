@@ -7,12 +7,12 @@ function Sites () {
   return (
     <section id='portfolio'>
       <Typography variant='h4'>
-        <Box lineHeight={2} m={0}>
+        <Box lineHeight={2} m={0} p={1}>
           Projects
         </Box>
       </Typography>
       <hr />
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         {data.data.map(({ idword, imgSrc, siteTitle, siteDescription, url, github, tech }) => (
           <MyCard key={url} idword={idword} imgSrc={imgSrc} siteTitle={siteTitle} siteDescription={siteDescription} url={url} github={github} tech={tech} />
         ))}

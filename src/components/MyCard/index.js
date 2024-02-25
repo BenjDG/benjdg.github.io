@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     borderRadius: '20px',
     border: '1px solid #000',
-    padding: '5px',
+    padding: '0px',
     width: '100%',
     height: '30%'
   },
